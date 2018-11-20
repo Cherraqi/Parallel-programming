@@ -1,0 +1,39 @@
+[error] /home/cherraqi/Bureau/parallel-computing/project/parallelMontecalo.scala:4:12: object scalameter is not a member of package org
+[error] import org.scalameter._
+[error]            ^
+[error] /home/cherraqi/Bureau/parallel-computing/project/parallelMontecalo.scala:6:8: not found: object common
+[error] import common._
+[error]        ^
+[error] /home/cherraqi/Bureau/parallel-computing/project/parallelMontecalo.scala:12:24: not found: value config
+[error]   val standardConfig = config(
+[error]                        ^
+[error] /home/cherraqi/Bureau/parallel-computing/project/parallelMontecalo.scala:13:5: not found: value Key
+[error]     Key.exec.minWarmupRuns -> 20,
+[error]     ^
+[error] /home/cherraqi/Bureau/parallel-computing/project/parallelMontecalo.scala:14:5: not found: value Key
+[error]     Key.exec.maxWarmupRuns -> 40,
+[error]     ^
+[error] /home/cherraqi/Bureau/parallel-computing/project/parallelMontecalo.scala:15:5: not found: value Key
+[error]     Key.exec.benchRuns -> 20,
+[error]     ^
+[error] /home/cherraqi/Bureau/parallel-computing/project/parallelMontecalo.scala:16:5: not found: value Key
+[error]     Key.verbose -> true
+[error]     ^
+[error] /home/cherraqi/Bureau/parallel-computing/project/parallelMontecalo.scala:17:20: not found: value Warmer
+[error]   ) withWarmer(new Warmer.Default)
+[error]                    ^
+[error] /home/cherraqi/Bureau/parallel-computing/project/parallelMontecalo.scala:34:36: not found: value parallel
+[error]     val ((pi1, pi2), (pi3, pi4)) = parallel(
+[error]                                    ^
+[error] /home/cherraqi/Bureau/parallel-computing/project/parallelMontecalo.scala:35:7: not found: value parallel
+[error]       parallel(monteCarloPi(iterations / 4), monteCarloPi(iterations / 4)),
+[error]       ^
+[error] /home/cherraqi/Bureau/parallel-computing/project/parallelMontecalo.scala:36:7: not found: value parallel
+[error]       parallel(monteCarloPi(iterations / 4), monteCarloPi(iterations / 4))
+[error]       ^
+[error] /home/cherraqi/Bureau/parallel-computing/project/parallelMontecalo.scala:38:12: type mismatch;
+[error]  found   : Any
+[error]  required: String
+[error]     (pi1 + pi2 + pi3 + pi4) / 4
+[error]            ^
+[error] 12 errors found
